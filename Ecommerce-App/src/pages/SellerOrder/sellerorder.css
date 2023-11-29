@@ -1,0 +1,16 @@
+.seller-order-container {
+  height: 100vh;
+  display: flex;
+  background-color: #f3f3f9;
+}
+.seller-order-main {
+  flex-grow: 1;
+  padding: 0 10px;
+  width: 80%;
+  overflow-y: auto;
+}
+
+.seller-order-main-1 {
+  margin-top: 60px;
+  padding: 0 30px;
+}

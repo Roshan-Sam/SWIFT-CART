@@ -1,0 +1,50 @@
+.customer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.customer-login {
+  min-width: 30%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 40px;
+}
+.customer-login h1 {
+  text-align: center;
+  font-weight: 500;
+  padding: 20px;
+  padding-top: 40px;
+  color: black;
+}
+.customer-login .login-span {
+  color: red;
+  font-size: inherit;
+}
+
+.customer-login .form {
+  margin: 0 auto;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.customer-login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  /* background-color: yellow; */
+  padding: 0 70px;
+}
+.customer-sign {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

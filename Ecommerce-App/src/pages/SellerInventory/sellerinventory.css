@@ -1,0 +1,38 @@
+.seller-inventory-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #f3f3f9;
+}
+.seller-inventory-main {
+  flex-grow: 1;
+  padding: 0 10px;
+  width: 80%;
+}
+.seller-inventory-main-sub {
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.seller-inventory-main-sub-2 {
+  margin-top: 80px;
+}
+
+.custom-table-row {
+  background-color: #f3f3f9;
+}
+
+.inventory-model {
+  margin: 0px auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .inventory-model {
+    width: 400px !important;
+    margin: -0px auto !important;
+  }
+}

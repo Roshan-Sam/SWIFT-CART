@@ -1,0 +1,327 @@
+.customer-home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.customer-home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.customer-home-main .main-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.customer-home-main .main-1-1 {
+  width: 80%;
+  position: relative;
+}
+.main-1-carousal {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 1px #555;
+}
+
+.carousal-image {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.carousal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+
+.carousal-left-arrow {
+  position: absolute;
+  font-size: 50px;
+  filter: drop-shadow(0px 0px 10px #555);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  background-color: red;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousal-left-arrow:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 5px #555);
+}
+.carousal-right-arrow {
+  position: absolute;
+  font-size: 50px;
+  filter: drop-shadow(0px 0px 10px #555);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+  background-color: red;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousal-right-arrow:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 5px #555);
+}
+
+@media only screen and (max-width: 1200px) {
+  .carousal-image {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carousal-image {
+    height: 250px;
+  }
+  .carousal-left-arrow,
+  .carousal-right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .carousal-image {
+    height: 150px;
+  }
+}
+
+.main-banner {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 40px;
+}
+
+.banner {
+  position: relative;
+  width: 30%;
+  height: 250px;
+  padding: 0 10px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.banner-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 10px 30px;
+  transition: 0.3s ease;
+  background-color: #ffffff;
+  color: #1e1e27;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.banner-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    width: 90%;
+  }
+
+  .banner-container {
+    gap: 20px;
+  }
+}
+
+.customer-home-main .main-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.customer-home-main .main-2 .main-2-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.main-2-heading h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #282828;
+  font-size: 45px;
+  font-weight: 200;
+  margin-bottom: 0;
+  letter-spacing: 10px;
+}
+
+.main-2-products-listing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding-top: 40px;
+  width: 90%;
+  justify-content: center;
+}
+.main-2-products-listing-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 300px;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.main-2-products-listing-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.main-2-products-listing-card img {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.main-2-product-listing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 25px;
+  gap: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.main-2-product-listing-content h3 {
+  color: #1e1e27;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding: 0 10px;
+}
+.main-2-product-listing-content p {
+  margin-bottom: 0;
+}
+
+.main-2-products-listing-card:hover .main-2-product-listing-content {
+  transform: translateY(0);
+}
+
+.main-2-products-listing-card .product-button {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-button button {
+  width: 50%;
+  height: 50px;
+  border-radius: 0;
+}
+.main-2-products-listing-card:hover .product-button {
+  opacity: 1;
+}
+
+.quick-view-button {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.quick-view-button button {
+  background-color: #333;
+  border-radius: 2px;
+}
+.main-2-products-listing-card:hover .quick-view-button {
+  opacity: 1;
+}
+
+.main-3 {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s;
+  background: #1e1e27;
+  width: 500px;
+  height: 60px;
+  justify-content: center;
+}
+.main-3:hover {
+  transform: scale(1.05);
+}
+.main-3-btn {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+.main-3-btn:hover {
+  color: #fff !important;
+  opacity: 0.8 !important;
+}
+.long-arrow::after {
+  content: " ⟶";
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-3 {
+    width: fit-content;
+    padding: 0 20px;
+  }
+}

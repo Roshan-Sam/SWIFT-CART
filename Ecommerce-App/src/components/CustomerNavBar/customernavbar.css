@@ -1,0 +1,160 @@
+.customer-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.ecommerce-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.ecommerce-heading .span-1 {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 1000;
+}
+.ecommerce-heading .span-2 {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 1000;
+  color: red;
+}
+
+.ecommerce-heading i {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+}
+
+.middle-section .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.middle-section h3 {
+  font-size: 14px;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.middle-section .nav-items-1 {
+  color: #1e1e27;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.middle-section .nav-items-1:hover {
+  color: #88888f;
+}
+
+.active {
+  border-bottom: 1px solid rgb(255, 103, 103);
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.login-button {
+  background-color: #fff;
+  border: none;
+  color: #1e1e27;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.login-icon {
+  font-size: 22px !important;
+}
+.login-span {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #1e1e27;
+}
+
+.login-button:hover {
+  opacity: 0.6;
+}
+
+.right-section .cart-icon {
+  cursor: pointer;
+  width: 22px;
+  transition: opcity 0.5 ease;
+}
+.right-section .cart-icon:hover {
+  opacity: 0.4;
+}
+
+.navbar-profile-icon {
+  font-size: 22px;
+  transition: opcity 0.5 ease;
+  cursor: pointer;
+}
+.navbar-profile-icon:hover {
+  opacity: 0.4;
+}
+
+.customer-profile-content {
+  width: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.customer-profile-content h3 {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+.customer-profile-content h4 {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(109, 109, 109);
+  margin-bottom: 0;
+}
+
+@media (max-width: 1100px) {
+  .nav-items {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ecommerce-heading {
+    margin-left: 0;
+  }
+
+  .login-button {
+    margin: 10px 0;
+  }
+  .right-section {
+    flex-direction: column;
+  }
+}

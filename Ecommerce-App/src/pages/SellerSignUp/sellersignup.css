@@ -1,0 +1,56 @@
+.seller-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.seller-signup-container .form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 450px;
+}
+.sign-up-head {
+  text-align: center;
+  padding: 10px 0;
+}
+.sign-up-head h1 {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+  color: #1890ff;
+}
+
+.sign-up-form {
+  margin-top: 20px;
+}
+.seller-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ant-form-item {
+  margin-bottom: 15px;
+}
+
+.ant-form-item-label {
+  text-align: left !important;
+}
+
+.seller-sign-btn button {
+  width: 100%;
+}
+
+.ant-input-password {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .seller-signup-container {
+    height: auto;
+  }
+}
